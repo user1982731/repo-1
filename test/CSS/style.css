@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.background{
+    background-color: #d61847;
+    position: fixed;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height:100%;
+    border-radius: 3px;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(10, 10vh);
+}
+
+.first-page{
+    display: grid;
+    align-items: center;
+    grid-column: 4/12;
+    grid-row: 1/10;
+    width: 100%;
+}
+
+#logo{
+    width: 10%;
+}
+
+.foto{
+    width: 40%;
+}
+
+#Iphone{
+    display: grid;
+    align-items: center;
+    grid-column: 16/22;
+    grid-row: 1/10;
+    align-items: center;
+}
+#Iphone img{
+    width: 100%;
+}
+
+.navbar{
+    grid-column: 1/24;
+    grid-row: 10/10;
+}
+
+.fa-solid {
+    font-size: 4vh;
+    padding: 0 20px 0px 5px;
+    margin-top: 50px;
+    
+
+
+}
+
+@media (max-width: 1000px){
+    .first-page h1{
+        font-size: 22px;
+    }
+    .first-page p{
+        font-size: 13px;
+    }
+
+    .navbar{
+        font-size: 2vh;
+    }
+    .fa-solid{
+        font-size: 3vh;
+    }
+    
+
+    
+}
+
+@media (max-width: 800px){
+    .first-page h1{
+        font-size: 20px;
+    }
+    .first-page p{
+        font-size: 12px;
+    }
+    .fa-solid{
+        font-size: 3vh;
+    }
+}
